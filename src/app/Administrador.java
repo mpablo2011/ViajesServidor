@@ -14,6 +14,11 @@ import interfaz.TDAManejoDatos;
 
 public class Administrador extends UnicastRemoteObject implements TDAManejoDatos{
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public Administrador() throws RemoteException {
 		super();
 		// TODO Auto-generated constructor stub
