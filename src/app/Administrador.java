@@ -125,7 +125,7 @@ public class Administrador extends UnicastRemoteObject implements TDAManejoDatos
 	}
 
 	@Override
-	public Vector getItemVentaVector() {
+	public Vector<Vector<String>> getItemVentaVector() {
 		// TODO Auto-generated method stub
 		return VentaController.getInstancia().getItemVentaVector();
 	}
