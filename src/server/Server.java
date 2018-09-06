@@ -1,13 +1,18 @@
 package server;
 
 import java.rmi.Naming;
-import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 
 import app.Administrador;
+
 public class Server{
 	
 	Administrador objetoRemoto;
+	
+	public static void main(String[] args)
+	{
+		new Server();
+	}
 	
 	public Server() {
 		iniciar();
