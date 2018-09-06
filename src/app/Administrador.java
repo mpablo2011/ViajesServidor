@@ -128,4 +128,14 @@ public class Administrador extends UnicastRemoteObject implements TDAManejoDatos
 		VentaController.getInstancia().grabarVenta();
 	}
 
+	@Override
+	public Object[][] getVentas() {
+		return MainSistemaDeVentas.getInstancia().getVentas();
+	}
+
+	@Override
+	public Object[][] getProductos() {
+		return MainSistemaDeVentas.getInstancia().getProductos();
+	}
+
 }
