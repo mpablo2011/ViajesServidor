@@ -137,14 +137,12 @@ public class Administrador extends UnicastRemoteObject implements TDAManejoDatos
 	}
 
 	@Override
-	public Vector<ProductoView> obtenerProductosView() throws RemoteException {
-		
+	public Vector<Vector<String>> obtenerProductosView() throws RemoteException {		
 		return ProductoController.getInstancia().obtenerProductosView();
 	}
 
 	@Override
-	public Vector<VentaView> obtenerVentasView() throws RemoteException {
-		// TODO Auto-generated method stub
+	public Vector<Vector<String>> obtenerVentasView() throws RemoteException {
 		return VentaController.getInstancia().obtenerVentasView();
 	}
 
