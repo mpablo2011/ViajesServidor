@@ -21,7 +21,7 @@ public class Administrador extends UnicastRemoteObject implements TDAManejoDatos
 
 	public Administrador() throws RemoteException {
 		super();
-		// TODO Auto-generated constructor stub
+		MainSistemaDeVentas.getInstancia().cargaInicial();
 	}
 
 	@Override
@@ -44,8 +44,16 @@ public class Administrador extends UnicastRemoteObject implements TDAManejoDatos
 
 	@Override
 	public ProductoView getProductoPorCodigo(int codigo) {
-		// TODO Auto-generated method stub
-		return ProductoController.getInstancia().getProductoPorCodigo(codigo);
+		try
+		{
+			return ProductoController.getInstancia().getProductoPorCodigo(codigo);
+		}
+		catch(Exception e) 
+		{
+			e.printStackTrace();
+		}
+	
+		return null;
 	}
 
 	@Override
