@@ -132,7 +132,6 @@ public class Administrador extends UnicastRemoteObject implements TDAManejoDatos
 
 	@Override
 	public void grabarVenta() {
-		// TODO Auto-generated method stub
 		VentaController.getInstancia().grabarVenta();
 	}
 
