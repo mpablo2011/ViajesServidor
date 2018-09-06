@@ -4,6 +4,7 @@ import java.rmi.Naming;
 import java.rmi.registry.LocateRegistry;
 
 import app.Administrador;
+import app.MainSistemaDeVentas;
 
 public class Server{
 	
@@ -14,7 +15,7 @@ public class Server{
 		new Server();
 	}
 	
-	public Server() {
+	public Server() {		
 		iniciar();
 	}
 	
